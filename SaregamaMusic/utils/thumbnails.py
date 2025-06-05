@@ -53,7 +53,7 @@ def fit_text(draw, text, max_width, font_path, start_size, min_size):
         size -= 1
     return ImageFont.load_default()
 
-async def get_thumb(videoid: str):
+async def gen_thumb(videoid: str):
     url = f"https://www.youtube.com/watch?v={videoid}"
     try:
         results = VideosSearch(url, limit=1)
@@ -133,6 +133,6 @@ async def get_thumb(videoid: str):
         return str(output_path)
 
     except Exception as e:
-        print(f"[get_thumb Error] {e}")
+        print(f"[gen_thumb Error] {e}")
         traceback.print_exc()
         return None
