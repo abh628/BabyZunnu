@@ -35,7 +35,7 @@ from SaregamaMusic.utils.exceptions import AssistantErr
 from SaregamaMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
 from SaregamaMusic.utils.inline.play import stream_markup
 from SaregamaMusic.utils.stream.autoclear import auto_clean
-from SaregamaMusic.utils.thumbnails import gen_thumb
+from SaregamaMusic.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
